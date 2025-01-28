@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Submission</title>
+    <link rel="icon" href="blogger.png" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+<body class="items-center justify-center text-center">
+    <h1 class="text-center text-3xl" >Create a Blog</h1>
+    <form onsubmit="storeBlogData(event)">
+        <div>
+            <label for="blogTitle">Blog Title:</label>
+            <input type="text" id="blogTitle" name="blogTitle" required>
+        </div>
+        <div>
+            <label for="blogContent">Blog Content:</label>
+            <textarea id="blogContent" name="blogContent" rows="5" required></textarea>
+        </div>
+        <button type="submit">Save Blog</button>
+    </form>
+    <hr>
+    <h2>Saved Blogs:</h2>
+    <div id="blogsContainer">
+    </div>
+</body>
+</html>
