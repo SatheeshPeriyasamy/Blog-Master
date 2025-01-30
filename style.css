@@ -1,64 +1,204 @@
-*{
-    font-family: "Roboto";
+body {
+    background: linear-gradient(135deg, #20107b, #6a159e); 
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
 }
 
 .blog {
-    margin-bottom: 20px;
+    background-color: white;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
+.blog:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
 .blog-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1F2937;
     display: flex;
     justify-content: space-between;
-    cursor: pointer;
-    font-weight: bold;
+    align-items: center;
 }
+
 .view-count {
     display: flex;
     align-items: center;
+    color: #6B7280;
 }
+
 .eye-icon {
-    margin-right: 5px;
-}
-.blog-content {
-    margin-top: 10px;
+    margin-right: 0.5rem;
 }
 
-/* Loader Styles */
-.loader-container {
-    position: fixed;
-    top: 0;
-    left: 0;
+button {
+    padding: 0.5rem 1.25rem;
+    background-color: #3B82F6;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563EB;
+}
+
+
+.edit-button,
+.delete-button {
+    padding: 0.5rem 1.25rem;
+    background-color: #10B981;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+}
+
+.edit-button:hover {
+    background-color: #047857;
+}
+
+.delete-button {
+    background-color: #EF4444;
+}
+
+.delete-button:hover {
+    background-color: #B91C1C;
+}
+
+textarea,
+input[type="text"] {
     width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #E5E7EB;
+    font-size: 1rem;
+    box-sizing: border-box;
 }
 
-.loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+textarea:focus,
+input[type="text"]:focus {
+    border-color: #3B82F6;
+    outline: none;
 }
 
-/* Keyframes for the spin animation */
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-/* Hide content initially */
-.hidden {
-    display: none;
+form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #3B82F6;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-/* Show content after the loader is gone */
-.show {
-    display: block;
+form button:hover {
+    background-color: #2563EB;
 }
 
 
+
+body {
+    background: linear-gradient(135deg, #6A11CB, #2575FC); 
+    font-family: 'Roboto', sans-serif;
+    color: #fff; 
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 1rem;
+}
+
+header a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #1D4ED8; 
+}
+
+
+#hero {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+#hero h1 {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+#hero h3 {
+    font-size: 2rem;
+}
+
+
+button {
+    padding: 0.75rem 2rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 9999px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563EB;
+}
+
+
+#blog-list h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+
+.blog {
+    background-color: white;
+    color: #333;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.blog:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background-color: #000;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
